@@ -1,12 +1,7 @@
-/*
- *  Created by IntelliJ IDEA.
- *  User: Vaibhav
- *  Date: 23-Mar-20
- *  Time: 7:17 PM
- */
-package problem1.mybst;
+package problem2.mybst;
+// to implement BinarySearchTree
 
-import problem1.node.TreeNode;
+import problem2.node.TreeNode;
 
 public class MyBinarySearchTree {
     private TreeNode root;
@@ -58,7 +53,6 @@ public class MyBinarySearchTree {
         int noOfNodesNotHavingLeftChild = traverseLeftNodesRec(root, false);
         System.out.println();
         return noOfNodesNotHavingLeftChild;
-
     }
 
     // A recursive function to do left traversal of BST
@@ -104,7 +98,6 @@ public class MyBinarySearchTree {
         }
     }
 
-    //Searches Element
     public boolean search(int data) {
         TreeNode node = searchRec(root, data);
         if (node == null) {
